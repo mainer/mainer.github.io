@@ -112,7 +112,7 @@
 <meta property="og:url" content="localhost:4000/2016/10/11/QunarFE开发总结/index.html">
 <meta property="og:site_name" content="Angelo&#39;s Site">
 <meta property="og:description" content="对于刚刚从客户端/后端转学前端的攻城狮们来说，总是被前端开发的环境配置、框架所困扰，甚至有种搞蒙了的感觉。在工作中，我记录下了一些 Quanr 前端开发的要点、以及一些相关资料的集合，便于查询。">
-<meta property="og:updated_time" content="2017-06-16T17:53:58.000Z">
+<meta property="og:updated_time" content="2017-06-16T18:45:34.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Qunar FE 开发总结">
 <meta name="twitter:description" content="对于刚刚从客户端/后端转学前端的攻城狮们来说，总是被前端开发的环境配置、框架所困扰，甚至有种搞蒙了的感觉。在工作中，我记录下了一些 Quanr 前端开发的要点、以及一些相关资料的集合，便于查询。">
@@ -408,8 +408,12 @@
 </blockquote>
 </li>
 <li>执行 <code>qnpm install</code> 以安装所有必须的插件</li>
-<li>打包工程，在工程目录下执行：<code>ykit pack -m</code></li>
-<li>在<strong>工程的上一目录</strong>启动服务：<code>sudo ykit server</code></li>
+<li><p>打包工程，在工程目录下执行：</p>
+ <figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 工程目录</span></div><div class="line">ykit pack -m</div></pre></td></tr></table></figure>
+</li>
+<li><p>在<strong>工程的上一目录</strong>启动服务：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 工程目录</span></div><div class="line"><span class="built_in">cd</span> ..</div><div class="line">sudo ykit server</div></pre></td></tr></table></figure>
+</li>
 <li><p>在Chrome浏览器输入以下链接，并尝试修改页面查看结果：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://hy.bus.qunar.com/coachHy/#/charteredDemandPage</div></pre></td></tr></table></figure>
 </li>

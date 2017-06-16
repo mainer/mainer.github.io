@@ -1000,7 +1000,7 @@ pre .javascript .function {
   line-height: 36px;
   font-size: 24px;
   font-weight: normal;
-  font-family: 'Orbitron', 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .site-subtitle {
   margin-top: 10px;
@@ -1155,6 +1155,7 @@ pre .javascript .function {
 .posts-expand .post-body h6 {
   padding-top: 10px;
   font-weight: 200;
+  font-size: 25px;
 }
 .posts-expand .post-body h2 .header-anchor,
 .posts-expand .post-body h3 .header-anchor,
@@ -1785,7 +1786,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a1d6ff;
+  background: #1a5bff;
 }
 .links-of-blogroll {
   font-size: 13px;

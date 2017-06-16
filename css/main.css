@@ -1534,14 +1534,16 @@ pre .javascript .function {
 }
 #rewardButton span {
   display: inline-block;
-  width: 80px;
-  height: 35px;
-  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
   color: #fff;
   font-weight: 400;
   font-style: normal;
   font-variant: normal;
   font-stretch: normal;
+  line-height: 50px;
+  text-align: center;
   font-size: 18px;
   font-family: "Microsoft Yahei";
   background: #f44336;
@@ -1556,20 +1558,10 @@ pre .javascript .function {
   border: 0;
 }
 #QR img {
-  width: 180px;
+  width: 120px;
   max-width: 100%;
   display: inline-block;
   margin: 0.8em 2em 0 2em;
-}
-#wechat:hover p {
-  animation: roll 0.1s infinite linear;
-  -webkit-animation: roll 0.1s infinite linear;
-  -moz-animation: roll 0.1s infinite linear;
-}
-#alipay:hover p {
-  animation: roll 0.1s infinite linear;
-  -webkit-animation: roll 0.1s infinite linear;
-  -moz-animation: roll 0.1s infinite linear;
 }
 @-moz-keyframes roll {
   from {
@@ -1792,7 +1784,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7761ba;
+  background: #38711a;
 }
 .links-of-blogroll {
   font-size: 13px;

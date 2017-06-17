@@ -112,7 +112,7 @@
 <meta property="og:url" content="localhost:4000/2016/10/11/QunarFE开发总结/index.html">
 <meta property="og:site_name" content="Angelo&#39;s Site">
 <meta property="og:description" content="对于刚刚从客户端/后端转学前端的攻城狮们来说，总是被前端开发的环境配置、框架所困扰，甚至有种搞蒙了的感觉。在工作中，我记录下了一些 Quanr 前端开发的要点、以及一些相关资料的集合，便于查询。">
-<meta property="og:updated_time" content="2017-06-16T18:45:34.000Z">
+<meta property="og:updated_time" content="2017-06-17T05:35:03.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Qunar FE 开发总结">
 <meta name="twitter:description" content="对于刚刚从客户端/后端转学前端的攻城狮们来说，总是被前端开发的环境配置、框架所困扰，甚至有种搞蒙了的感觉。在工作中，我记录下了一些 Quanr 前端开发的要点、以及一些相关资料的集合，便于查询。">
@@ -190,7 +190,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <p class="site-subtitle">Let me see ...</p>
       
   </div>
 
@@ -389,14 +389,14 @@
 <h3 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h3><ul>
 <li><p><a href="http://yo.ymfe.tech/" target="_blank" rel="external">核心组件-YO</a>：YO 是一个专注于移动开发的 Front-end UI Framework，她轻量，易用，可配置，并且具备超强的扩展能力。</p>
 </li>
-<li><p><a href="http://ued.qunar.com/ykit/" target="_blank" rel="external">Ykit 工具</a>：Ykit 是一套可配置和可扩展的前端开发工具集，让开发者灵活地搭建开发环境，和使用资源打包、静态资源访问、网络代理等服务。</p>
+<li><p><a href="http://ued.qunar.com/ykit/" target="_blank" rel="external">YKit 工具</a>：YKit 是一套可配置和可扩展的前端开发工具集，让开发者灵活地搭建开发环境，和使用资源打包、静态资源访问、网络代理等服务。</p>
 </li>
 <li><p><a href="http://ued.qunar.com/" target="_blank" rel="external">Qunar UED</a>：Qunar 自己的开源/非开源框架合集。</p>
 </li>
 </ul>
 <h3 id="开发环境配置"><a href="#开发环境配置" class="headerlink" title="开发环境配置"></a>开发环境配置</h3><p>在本机配置开发环境，需要配置安装 node.js 环境，在 标准的 Qunar 前端工程中调用 npm 安装插件，然后运行本地服务，则可以调试 HY 页面。</p>
 <ol>
-<li>安装 <code>node.js</code>（如果本机没安装）；</li>
+<li>安装 <code>node.js</code> (如果本机没安装)；</li>
 <li>安装 <code>qnpm</code> 、<code>ykit</code> 等插件；</li>
 <li><p>Clone Project <code>busapp2</code> 到本地； </p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone git@gitlab.corp.qunar.com:fe/busapp2.git</div></pre></td></tr></table></figure>
@@ -404,7 +404,7 @@
 <li><p>配置 <code>hosts</code> 文件：在 hosts 文件追加:</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">127.0.0.1 q.qunarzz.com</div></pre></td></tr></table></figure>
 <blockquote>
-<p>NOTE: (1) 上面的地址会影响到 <a href="http://wanshiwu.corp.qunar.com/mobile/packageApp" target="_blank" rel="external">发版万事屋</a> 的访问；（2）推荐使用 <code>SwitchHosts</code> 工具以便捷切换 host，<a href="https://github.com/oldj/SwitchHosts/releases" target="_blank" rel="external">SwitchHosts官方主页</a></p>
+<p>NOTE: (1) 上面的地址会影响到 <a href="http://wanshiwu.corp.qunar.com/mobile/packageApp" target="_blank" rel="external">发版万事屋</a> 的访问；<br> (2) 推荐使用 <a href="https://github.com/oldj/SwitchHosts/releases" target="_blank" rel="external">SwitchHosts 官方主页</a> 工具以便捷切换 host。</p>
 </blockquote>
 </li>
 <li>执行 <code>qnpm install</code> 以安装所有必须的插件</li>
@@ -420,9 +420,9 @@
 </ol>
 <h3 id="在手机上实时查看代码改动"><a href="#在手机上实时查看代码改动" class="headerlink" title="在手机上实时查看代码改动"></a>在手机上实时查看代码改动</h3><p>使用手机浏览器 Debug ，要让手机浏览器访问的网络定向到开发机的服务，因此需要设置代理。</p>
 <p>开发机、手机需要在同一局域网。</p>
-<p>开发机上启动本地服务器，该服务器的地址是：<strong>本机当前网络的 IP 地址</strong>，端口号为 <code>999</code> :</p>
+<p>开发机上启动本地服务器，该服务器的地址是：<strong>本机当前网络的 IP 地址</strong>，端口号为 <strong>999</strong> :</p>
 <figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo ykit server -x</div></pre></td></tr></table></figure>
-<p>手机在 Wifi 处设置代理，代理 IP 为开发机当前网络的 IP，端口号为 <code>999</code>，设置后，手机中的所有请求都会被代理到该 IP 和端口所指的服务程序，从而访问到 Debug 页面。</p>
+<p>手机在 Wifi 处设置代理，代理 IP 为开发机当前网络的 IP，端口号为 <strong>999</strong>，设置后，手机中的所有请求都会被代理到该 IP 和端口所指的服务程序，从而访问到 Debug 页面。</p>
 <p>如果你要在 PC 浏览器上访问开发页面，PC 浏览器也需要设置代理地址和端口，从而将浏览器的请求代理到本机服务器程序。代理地址为：localhost:999。</p>
 <blockquote>
 <p>NOTE：浏览器使用<code>SwitchOmega</code> Chrome 插件来管理代理地址。</p>
@@ -430,8 +430,8 @@
 <h3 id="使用-IconFont"><a href="#使用-IconFont" class="headerlink" title="使用 IconFont"></a>使用 IconFont</h3><ol>
 <li>去 <a href="http://iconfont.corp.qunar.com/projects" target="_blank" rel="external">ICON-FONT-ADDRESS</a> <strong>我的图标项目</strong>中查看是否有自己引入的图标，如果有，即可使用；如果没有，则进入第二步：</li>
 <li>去 <a href="http://iconfont.corp.qunar.com/" target="_blank" rel="external">ICONS-库</a> 找到自己需要新加的图标，保存到购物车，保存到自己的项目。</li>
-<li>进入步骤1我的项目页面，点击 <strong>同步Source</strong> 按钮，生成新的图标库版本。此时线上就会使用最新的图标库版本。</li>
-<li>进入工程：<code>busapp2/src/yo-config/core/iconfont.scss</code>文件中。修改对用的iconFont 库版本即可。</li>
+<li>进入步骤 1 我的项目页面，点击 <strong>同步Source</strong> 按钮，生成新的图标库版本。此时线上就会使用最新的图标库版本。</li>
+<li>进入工程：<code>busapp2/src/yo-config/core/iconfont.scss</code> 文件中。修改对应的iconFont 库版本即可。</li>
 <li>重新 <code>ykit pack -m</code> 打包工程，刷新页面即可看到新的图标已经可以使用。</li>
 </ol>
 

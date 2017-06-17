@@ -1164,7 +1164,7 @@ pre .javascript .function {
 .posts-expand .post-body h5,
 .posts-expand .post-body h6 {
   padding-top: 10px;
-  font-weight: 200;
+  font-weight: 300;
 }
 .posts-expand .post-body h2 .header-anchor,
 .posts-expand .post-body h3 .header-anchor,
@@ -1553,6 +1553,7 @@ pre .javascript .function {
   text-transform: none;
   text-indent: 0px;
   text-shadow: none;
+  margin-top: 20px;
 }
 #rewardButton span {
   display: inline-block;
@@ -1806,7 +1807,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffc72d;
+  background: #dae97c;
 }
 .links-of-blogroll {
   font-size: 13px;

@@ -405,10 +405,10 @@
 <li>安装 <code>node.js</code> (如果本机没安装)；</li>
 <li>安装 <code>qnpm</code> 、<code>ykit</code> 等插件；</li>
 <li><p>Clone Project <code>busapp2</code> 到本地； </p>
- <figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone git@gitlab<span class="selector-class">.corp</span><span class="selector-class">.qunar</span><span class="selector-class">.com</span>:fe/busapp2.git</div></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone git@gitlab.corp.qunar.com:fe/busapp2.git</div></pre></td></tr></table></figure>
 </li>
 <li><p>配置 <code>hosts</code> 文件：在 hosts 文件追加:</p>
- <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">127<span class="selector-class">.0</span><span class="selector-class">.0</span><span class="selector-class">.1</span> <span class="selector-tag">q</span><span class="selector-class">.qunarzz</span><span class="selector-class">.com</span></div></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">127.0.0.1 q.qunarzz.com</div></pre></td></tr></table></figure>
 <blockquote>
 <p>NOTE: (1) 上面的地址会影响到 <a href="http://wanshiwu.corp.qunar.com/mobile/packageApp" target="_blank" rel="external">发版万事屋</a> 的访问；<br> (2) 推荐使用 <a href="https://github.com/oldj/SwitchHosts/releases" target="_blank" rel="external">SwitchHosts 官方主页</a> 工具以便捷切换 host。</p>
 </blockquote>
@@ -421,7 +421,7 @@
  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 工程目录</span></div><div class="line"><span class="built_in">cd</span> ..</div><div class="line">sudo ykit server</div></pre></td></tr></table></figure>
 </li>
 <li><p>在Chrome浏览器输入以下链接，并尝试修改页面查看结果：</p>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http:<span class="regexp">//</span>hy.bus.qunar.com<span class="regexp">/coachHy/</span><span class="comment">#/charteredDemandPage</span></div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://hy.bus.qunar.com/coachHy/#/charteredDemandPage</div></pre></td></tr></table></figure>
 </li>
 </ol>
 <h3 id="在手机上实时查看代码改动"><a href="#在手机上实时查看代码改动" class="headerlink" title="在手机上实时查看代码改动"></a>在手机上实时查看代码改动</h3><p>使用手机浏览器 Debug ，要让手机浏览器访问的网络定向到开发机的服务，因此需要设置代理。</p>

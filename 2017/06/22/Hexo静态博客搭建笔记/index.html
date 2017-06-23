@@ -117,7 +117,7 @@
 <meta property="og:url" content="localhost:4000/2017/06/22/Hexo静态博客搭建笔记/index.html">
 <meta property="og:site_name" content="Angelo&#39;s Site">
 <meta property="og:description" content="介绍 hexo 博客搭建，包含 hexo 本地环境搭建，node.js 安装、git 安装，Hexo 博客的部署，以及根据自己的喜好修改 NexT 主题。">
-<meta property="og:updated_time" content="2017-06-22T17:45:16.000Z">
+<meta property="og:updated_time" content="2017-06-22T17:55:45.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo静态博客搭建笔记">
 <meta name="twitter:description" content="介绍 hexo 博客搭建，包含 hexo 本地环境搭建，node.js 安装、git 安装，Hexo 博客的部署，以及根据自己的喜好修改 NexT 主题。">
@@ -392,6 +392,13 @@
 </ol>
 <h3 id="自动部署脚本"><a href="#自动部署脚本" class="headerlink" title="自动部署脚本"></a>自动部署脚本</h3><p>创建名为 <code>hd</code> 的文件， 修改其权限 <code>chmod 755 hd</code>, 将其放到 <code>/usr/local/bin</code> 目录下。这样就可以在终端的任意位置使用 <code>hd</code> 命令一键发布最新写的博客。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#!/bin/sh</span></div><div class="line"><span class="built_in">cd</span> ~/an/blog</div><div class="line">hexo clean</div><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ol>
+<li><p>Hexo 的 <code>_config.yml</code> 中，应该：<code>auto_detect: false</code> 否则在 deploy 时可能会遇到很诡异的错误：<code>TypeError: Cannot set property &#39;lastIndex&#39; of undefined</code>。(应该是 hexo 的 bug，期待后续版本能解决)。</p>
+</li>
+<li><p>在使用区域代码块时 <code>&#39;&#39;&#39;</code>，如果代码快首行有包含 <code>#</code> 的注释，有可能在渲染时不能正确渲染行号。此时可以先不输入 <code>#</code>，刷新渲染以后再输入 <code>#</code>，然后再刷新渲染。</p>
+</li>
+</ol>
+
       
     </div>
 
@@ -611,7 +618,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一些参考链接ss"><span class="nav-number">1.</span> <span class="nav-text">一些参考链接ss</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装部署步骤"><span class="nav-number">2.</span> <span class="nav-text">安装部署步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#本机："><span class="nav-number">2.1.</span> <span class="nav-text">本机：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署："><span class="nav-number">2.2.</span> <span class="nav-text">部署：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自动部署脚本"><span class="nav-number">2.3.</span> <span class="nav-text">自动部署脚本</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一些参考链接ss"><span class="nav-number">1.</span> <span class="nav-text">一些参考链接ss</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装部署步骤"><span class="nav-number">2.</span> <span class="nav-text">安装部署步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#本机："><span class="nav-number">2.1.</span> <span class="nav-text">本机：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署："><span class="nav-number">2.2.</span> <span class="nav-text">部署：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自动部署脚本"><span class="nav-number">2.3.</span> <span class="nav-text">自动部署脚本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注意事项"><span class="nav-number">2.4.</span> <span class="nav-text">注意事项</span></a></li></ol></li></ol></div>
             
 
           </div>

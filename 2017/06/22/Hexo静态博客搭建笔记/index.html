@@ -117,7 +117,7 @@
 <meta property="og:url" content="localhost:4000/2017/06/22/Hexo静态博客搭建笔记/index.html">
 <meta property="og:site_name" content="Angelo&#39;s Site">
 <meta property="og:description" content="介绍 hexo 博客搭建，包含 hexo 本地环境搭建，node.js 安装、git 安装，Hexo 博客的部署，以及根据自己的喜好修改 NexT 主题。">
-<meta property="og:updated_time" content="2017-06-22T17:55:45.000Z">
+<meta property="og:updated_time" content="2017-06-23T05:17:11.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo静态博客搭建笔记">
 <meta name="twitter:description" content="介绍 hexo 博客搭建，包含 hexo 本地环境搭建，node.js 安装、git 安装，Hexo 博客的部署，以及根据自己的喜好修改 NexT 主题。">
@@ -388,7 +388,7 @@
 <h3 id="部署："><a href="#部署：" class="headerlink" title="部署："></a>部署：</h3><ol>
 <li>部署到本地；<br> localhost 访问。</li>
 <li>部署到github；<br> 文章连接：</li>
-<li>部署到自己的服务器<br> (1)、服务器安装<code>nginx</code>;<br> (2)、配置<code>ngnix</code>;<br> (3)、配置<code>git</code>；<br> (4)、部署hexo。</li>
+<li>部署到自己的服务器<br> (1)、服务器安装<code>nginx</code>；<br> (2)、配置<code>ngnix</code>；<br> (3)、配置<code>git</code>；<br> (4)、配置免密登录 <a href="http://www.1year.top/2017/06/22/Linux%E5%85%8D%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95/" target="_blank" rel="external">Linux免密码登录</a>；<br> (4)、部署hexo。</li>
 </ol>
 <h3 id="自动部署脚本"><a href="#自动部署脚本" class="headerlink" title="自动部署脚本"></a>自动部署脚本</h3><p>创建名为 <code>hd</code> 的文件， 修改其权限 <code>chmod 755 hd</code>, 将其放到 <code>/usr/local/bin</code> 目录下。这样就可以在终端的任意位置使用 <code>hd</code> 命令一键发布最新写的博客。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#!/bin/sh</span></div><div class="line"><span class="built_in">cd</span> ~/an/blog</div><div class="line">hexo clean</div><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>

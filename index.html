@@ -372,7 +372,9 @@
 
       
         
-          <p>Linux免密码登录踩坑以及详细分析介绍。<br>
+          <p>Linux免密码登录踩坑以及详细分析介绍。</p>
+<p>SSH 实际上是一个服务，在服务器上，该服务一直运行。并默认在 <code>22</code> 端口号上侦听请求。其登录方式有两种：<strong>帐号密码登录</strong>、<strong>公钥/私钥免密登录</strong>。对于帐号密码登录来讲，直接输入帐号密码即可，每次登录都需要验证密码。对于免密码登录，实际上使用的是公钥私钥验证。</p>
+<p>SSH 服务在服务器上的 <code>~/.ssh</code> 目录和客户端机器的 <code>~/.ssh</code>、<code>/etc/ssh/ssh_config</code> 目录下的文件读取配置、密钥进行验证。</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/06/22/Linux免密码登录/#more" rel="contents">
